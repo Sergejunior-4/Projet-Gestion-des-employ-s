@@ -1,0 +1,23 @@
+3° Visualisation du contenu complet d'une table (Ex : EMPLOYES) :
+SELECT * FROM employes;
+
+4° Liste des N°, noms et sexes des employés :
+SELECT EMPNO, EMPNOM, EMPSEXE FROM employes;
+
+5° Liste des N°, noms et salaires des femmes :
+SELECT EMPNO, EMPNOM, EMPSALAIRE FROM employes WHERE EMPSEXE = 'F';
+
+6° Liste des noms, salaires et N° de services des employés affectés aux services 1, 3 ou 6 :
+SELECT EMPNOM, EMPSALAIRE, SRVNO FROM employes WHERE SRVNO = 1 or SRVNO = 3 or SRVNO =6;
+
+7° Liste des N° et noms des employés ayant une prime comprise entre 500 et 1000 :
+SELECT EMPNO, EMPNOM FROM employes WHERE emprime between 500 and 1000;
+
+8° Liste des N°, noms et N° de services des employés dont la première lettre du nom est D :
+SELECT EMPNO, EMPNOM, SRVNO FROM employes WHERE empnom like 'D%';
+
+9° Liste par ordre alphabétique des employés de sexe masculin : nom, prénom et N° :
+SELECT EMPNO, EMPNOM, EMPPREN FROM employes WHERE EMPSEXE = 'M' order by empnom ASC;
+
+10° Liste des N°, noms, prénoms et noms de services des employés qui gagnent plus de 1000 :
+SELECT EMPNO, EMPNOM, EMPPREN, EMPSALAIRE, SRVNOM FROM employes, services WHERE employes.SRVNO = services.SRVNO and EMPSALAIRE > 1000;

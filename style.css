@@ -1,0 +1,49 @@
+* {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(228, 204, 173); 
+}
+
+input {
+  background-color: aliceblue;
+}
+
+th {
+  background-color: rgb(133, 148, 158);
+  text-align: center;   
+}
+
+tr {
+  background-color: rgb(133, 148, 158);
+  text-align: center;
+}
+
+td {
+  background-color: #C9C9C9;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.button {
+  width: 75px;
+  background: #615c8b;
+  text-align: center;
+  float: left;
+  color: rgb(255, 255, 255);
+  line-height: 32px; 
+  text-decoration: none;
+}
+
+.button:hover{
+  width: 75px;
+  background: #09212f;
+  color: #fff ;
+  text-align: center;
+  float: left;
+  line-height: 32px;
+  text-decoration: none;
+}
